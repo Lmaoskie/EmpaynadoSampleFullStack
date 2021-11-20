@@ -8,6 +8,8 @@ import javax.persistence.Table;
 @Data
 public class Employee {
 
+    @Id
+    @GeneratedValue(strategy = GeneratedType.IDENTITY)
     private int Id;
     private String name;
     private String location;
